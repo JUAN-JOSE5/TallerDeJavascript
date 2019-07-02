@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cont=0
+        var cont1=0
+        for(j=1;j<=10;j++){
+            var nombre=window.prompt("Digite el nombre del trabajador "+ j);
+            var sueldo=parseInt(window.prompt("Digite el sueldo del trabajador "));
+            var sexo=parseInt(window.prompt("(1=Femenino y 2=Masculino"));
+            if (sexo==1){
+            }
+            else if (sueldo>500){
+                cont=cont+1
+            }
+            if(sexo==2){               
+            }
+            else if (sueldo<400){
+                cont1=cont1+1
+            }
+        }
+        document.write("La cantidad de mujeres que ganas mas de $500 pesos es de: "+ cont)
+        document.write("<br>")
+        document.write("La cantidad de hombres que ganan menos de $400 pesos es de: "+ cont1)
+
+    </script>
+    
+</body>
+</html>
