@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let traje = parseInt(window.prompt("Digite el precio de su traje:"));
+        let descuento = 0, total = 0;
+        if(traje>150000){
+            descuento = traje * 0.15;
+            total = traje - descuento;
+            document.write(`Usted compro un traje mayor a 150.000, debido a esto ha recibido un descuento de 15% de el valor del traje, el descuento es de: ${descuento} , Su pago con descuento es de ${total}`);
+        }else{
+            descuento = traje * 0.08;
+            total = traje - descuento;
+            document.write(`Usted compro un traje menor a 150.000, debido a esto ha recibido un descuento de 8% de el valor del traje, el descuento es de: ${descuento} , Su pago con descuento es de ${total}`);
+        }
+    </script>
+</body>
+</html>
